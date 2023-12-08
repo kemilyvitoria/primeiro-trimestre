@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversos Tipos de Livros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .card {
+            width: 250px;
+            height: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card .title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://www.example.com/images/romance.jpg" alt="Romance">
+            <div class="title">Romance</div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.example.com/images/ficcao-cientifica.jpg" alt="Ficção Científica">
+            <div class="title">Ficção Científica</div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.example.com/images/misterio.jpg" alt="Mistério">
+            <div class="title">Mistério</div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.example.com/images/autoajuda.jpg" alt="Autoajuda">
+            <div class="title">Autoajuda</div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.example.com/images/historia.jpg" alt="História">
+            <div class="title">História</div>
+        </div>
+    </div>
+</body>
+</html>
